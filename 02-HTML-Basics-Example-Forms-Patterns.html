@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>some simple title</title>
+</head>
+<body>
+	<form action="index.php">
+		<label for="mps">Код на МПС</label>
+		<input type="text" name="mps_code" 
+		pattern="[A-Za-z]{2}" title="Двубуквен код на МПС" required id="mps">
+		<br><br>
+
+		<label for="password">Password: </label><input id="password" required type="password" name="pw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Паролата Ви трябва да съдържа поне една цифра, една главна буква, една малка буква и поне трябва да е съставена от поне 8 символа.">
+		<br><br>
+
+		<label for="email">E-mail: </label><input id="email" required type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+		<input type="submit">
+	</form>
+
+</body>
+</html>
