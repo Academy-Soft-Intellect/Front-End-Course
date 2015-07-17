@@ -5,8 +5,120 @@
 	<title>Document</title>
 </head>
 <body>
-	<table>
-		
+	<p>Colspan/Rowspan example</p>
+	<table cellspacing="0" border="1">
+	    <tr>
+	    	<td>Клетка с височина 1, широчина 1</td>
+	        <td colspan="2">Клетка с височина 1, широчина 2</td>
+        </tr>
+	    <tr>
+	        <td rowspan="2">Клетка с височина 2, широчина 1</td>
+	    	<td>Клетка с височина 1, широчина 1</td>
+	        <td>Клетка с височина 1, широчина 1</td>
+        </tr>
+	    <tr>
+	    	<td>Клетка с височина 1, широчина 1</td>
+	        <td>Клетка с височина 1, широчина 1</td>
+        </tr>
+	    <tr>
+	        <td>Клетка с височина 1, широчина 1</td>
+	    	<td rowspan="4">Клетка с височина 4, широчина 1</td>
+	        <td>Клетка с височина 1, широчина 1</td>
+        </tr>
+	    <tr>
+	    	<td>Клетка с височина 1, широчина 1</td>
+	        <td>Клетка с височина 1, широчина 1</td>
+        </tr>
+	    <tr>
+	    	<td>Клетка с височина 1, широчина 1</td>
+	        <td>Клетка с височина 1, широчина 1</td>
+        </tr>
+	    <tr>
+	    	<td>Клетка с височина 1, широчина 1</td>
+	        <td>Клетка с височина 1, широчина 1</td>
+        </tr>
+	</table>
+
+	<br><br>
+
+	<p>Nested tables example</p>
+
+	<table border="1" cellspacing="5" cellpadding="5">
+		<tr>
+			<th>Марка</th>
+			<th>Детайли</th>
+		</tr>
+		<tr>
+			<td>
+				Sony
+			</td>
+			<td>
+				<table border="0" cellspacing="5" cellpadding="5">
+					<tr>
+						<th>Модел</th>
+						<th>Цена</th>
+					</tr>
+					<tr>
+						<td>Xperia Z3</td>
+						<td>1200лв</td>
+					</tr>
+					<tr>
+						<td>Xperia Z1</td>
+						<td>700лв</td>
+					</tr>
+					<tr>
+						<td>Xperia Z3 Compact</td>
+						<td>900лв</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>			
+			<td>
+				Samsung
+			</td>
+			<td>
+				<table border="0" cellspacing="5" cellpadding="5">
+					<tr>
+						<th>Модел</th>
+						<th>Цена</th>
+					</tr>
+					<tr>
+						<td>Galaxy Note 4</td>
+						<td>1400лв</td>
+					</tr>
+					<tr>
+						<td>Galaxy S6</td>
+						<td>1200лв</td>
+					</tr>
+					<tr>
+						<td>Galaxy S3</td>
+						<td>250лв</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>			
+			<td>
+				HTC
+			</td>
+			<td>
+				<table border="0" cellspacing="5" cellpadding="5">
+					<tr>
+						<th>Модел</th>
+						<th>Цена</th>
+					</tr>
+					<tr>
+						<td>One M9</td>
+						<td>1400лв</td>
+					</tr>
+					<tr>
+						<td>Desire C</td>
+						<td>500лв</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
 	</table>
 </body>
 </html>

@@ -6,45 +6,58 @@
 </head>
 <body>
 	<form action="action.php">
-		<label for="username">Username: </label>
-		<input id="username" type="text" name="username" required placeholder="Username"><br><br>
+		<fieldset>
+			<legend>Our first form</legend>
+			<label for="username">Username: </label>
+			<input id="username" type="text" name="username" required placeholder="Username"><br><br>
 
-		Gender:
-		<input id="male" type="radio" name="gender" required>
-		<label for="male">Male</label>
-		<input id="female" type="radio" name="gender" required>
-		<label for="female">Female</label><br><br>
+			<label for="message">Your message:</label><br>
+			<textarea name="message" id="message" cols="30" rows="10"></textarea><br><br>
 
-		Have some programming experience?
-		<label for="progExpYes">Yes</label>
-		<input type="radio" name="progExp" id="progExpYes" disabled>
-		<label for="progExpNo">No</label>
-		<input type="radio" name="progExp" id="progExpNo" disabled><br><br>
+			Gender:
+			<input id="male" type="radio" name="gender" required>
+			<label for="male">Male</label>
+			<input id="female" type="radio" name="gender" required>
+			<label for="female">Female</label><br><br>
 
-		<label for="nationality">Nationality</label>
-		<select name="nationality" id="nationality">
-			<option value="bulgarian">Bulgarian</option>
-			<option value="american">American</option>
-			<option value="german">German</option>
-		</select><br><br>
+			Have some programming experience?
+			<label for="progExpYes">Yes</label>
+			<input type="radio" name="progExp" id="progExpYes" disabled>
+			<label for="progExpNo">No</label>
+			<input type="radio" name="progExp" id="progExpNo" disabled><br><br>
 
-		<label for="password">Password: </label><input id="password" type="password" placeholder="Password"><br><br>
+			<label for="nationality">Nationality</label>
+			<select name="nationality" id="nationality">
+				<option value="bulgarian">Bulgarian</option>
+				<option value="american">American</option>
+				<option value="german" selected>German</option>
+			</select><br><br>
 
-		<input type="tel" placeholder="Phone"><br><br>
+			<label for="preferredMusic">Preferred Music(Multiple)</label>
+			<select name="preferredMusicpreferredMusic" id="preferredMusic" multiple="multiple">
+				<option value="black">Black</option>
+				<option value="folk">Folk</option>
+				<option value="dance">Dance</option>
+			</select><br><br>
 
-		<input type="button" value="Some button"><br><br>
+			<label for="password">Password: </label><input id="password" type="password" placeholder="Password"><br><br>
 
-		<input type="text" readonly="" placeholder="This is some disabled input"><br><br>
+			<input type="tel" placeholder="Phone"><br><br>
 
-		<input type="checkbox" checked id="acception"><label for="acception">I accept the terms and conditions</label><br><br>
+			<input type="button" value="Some button"><br><br>
 
-		<input type="checkbox" checked id="acception2" disabled><label for="acception2">I accept the terms and conditions</label><br><br>
+			<input type="text" readonly="" placeholder="This is some disabled input"><br><br>
 
-		<input type="range" min="0" max="100"><br><br>
+			<input type="checkbox" checked id="acception"><label for="acception">I accept the terms and conditions</label><br><br>
 
-		<input type="number" min="0" max="100"><br><br>
+			<input type="checkbox" checked id="acception2" disabled><label for="acception2">I accept the terms and conditions</label><br><br>
 
-  		<input type="submit">
+			<input type="range" min="0" max="100" step="5"><br><br>
+
+			<input type="number" min="0" max="100" step="5"><br><br>
+
+	  		<input type="submit">
+  		</fieldset>
 	</form>
 </body>
 </html>
