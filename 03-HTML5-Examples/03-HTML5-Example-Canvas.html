@@ -7,15 +7,15 @@
 <body>
 	<canvas id="canvas1" width="200" height="200" style="background: red;"></canvas>
 	
-	<canvas id="box" width-"200" height="200"></canvas>
+	<canvas id="box" width="200" height="200"></canvas>
 	<script>
 	var box = document.getElementById("box");
 	var ctx = box.getContext("2d");
-	ctx.fillStyle = "#00f";
-	ctx.fillRect(0,0,200,200);
+	ctx.fillStyle = "#0f0";
+	ctx.fillRect(0,0,200,300);
 	</script>
 	
-	<canvas id="line" width-"200" height="200"></canvas>
+	<canvas id="line" width="200" height="200"></canvas>
 	<script>
 	var line = document.getElementById("line");
 	var ctx2 = line.getContext("2d");
@@ -24,29 +24,29 @@
 	ctx2.stroke();
 	</script>
 
-	<canvas id="circle" width-"200" height="200"></canvas>
+	<canvas id="circle" width="200" height="200"></canvas>
 	<script>
 	var circle = document.getElementById("circle");
 	var ctx3 = circle.getContext("2d");
-	ctx3.strokeStyle = '#ff0000';
+	ctx3.strokeStyle = '#f00';
 	ctx3.beginPath();
-	ctx3.arc(95,50,40,0,2*Math.PI);
+	ctx3.arc(40,40,40,0,2*Math.PI);
 	ctx3.stroke();
 	</script>
 
-	<canvas id="text" width-"200" height="200"></canvas>
+	<canvas id="text" width="500" height="200"></canvas>
 	<script>
 	var text = document.getElementById("text");
 	var ctx4 = text.getContext("2d");
-	ctx4.font = "30px Arial";
-	ctx4.fillText("Soft-Intellect",10,50);
+	ctx4.font = "50px calibri";
+	ctx4.fillText("sasdaslect",10,100);
 	</script>
 
-	<canvas id="text2" width-"200" height="200"></canvas>
+	<canvas id="text2" width="200" height="200"></canvas>
 	<script>
 	var text2 = document.getElementById("text2");
 	var ctx5 = text2.getContext("2d");
-	ctx5.strokeStyle = '#ff0000';
+	ctx5.strokeStyle = '#0f0';
 	ctx5.font = "30px Arial";
 	ctx5.strokeText("Hello World",10,50);
 	</script>
