@@ -1,0 +1,345 @@
+.border-img {
+	width: 200px;
+	height: 200px;
+	-webkit-border-image: url('Dot.png') 1 stretch; /* Safari 3.1-5 */
+    -o-border-image: url('Dot.png') 1 stretch; /* Opera 11-12.1 */
+    border-image: url('Dot.png') 1 stretch;
+}
+
+.border-img2 {
+	width: 200px;
+	height: 200px;
+	-webkit-border-image: url('Dot.png') 10% round; /* Safari 3.1-5 */
+    -o-border-image: url('Dot.png') 10% round; /* Opera 11-12.1 */
+    border-image: url('Dot.png') 10% round;
+}
+
+.rounded-corners {
+	width: 200px;
+	height: 200px;
+	border-radius: 20px;
+	background: green;
+}
+
+.rounded-corners2 {
+	background: 200px;
+	height: 200px;
+	background: orange;
+	border-radius: 15px 50px 30px;
+}
+
+.multiple-background {
+	width: 1000px;
+	height: 1000px;
+	background: url('img.jpg') no-repeat top left, url('img2.jpg') no-repeat bottom right;
+}
+
+.background-size {
+	width: 1000px;
+	height: 1000px;
+	background: url('img.jpg') no-repeat top left;
+	background-size: 320px 180px;
+}
+
+.rgba {
+	width: 200px;
+	height: 200px;
+	background: rgba(255, 0, 0, 0.1);
+}
+
+.opacity {
+	width: 200px;
+	height: 200px;
+	background: green;
+	opacity: 0.5;
+}
+
+.gradient1 {
+	width: 200px;
+	height: 200px;
+	background: -webkit-linear-gradient(yellow, green); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(yellow, green); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(yellow, green); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(yellow, green); /* Standard syntax */
+}
+
+.gradient2 {
+	width: 200px;
+	height: 200px;
+	background: -webkit-linear-gradient(left, yellow ,green); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, yellow, green); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, yellow, green); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, yellow ,green); /* Standard syntax */
+}
+
+.gradient3 {
+	width: 200px;
+	height: 200px;
+	background: -webkit-linear-gradient(orange, red, purple, blue, green, yellow, white); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(orange, red, purple, blue, green, yellow, white); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(orange, red, purple, blue, green, yellow, white); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(orange, red, purple, blue, green, yellow, white); /* Standard syntax */
+}
+
+.gradient4 {
+	width: 200px;
+	height: 200px;
+	background: -webkit-radial-gradient(yellow 33%, green 66%, blue 100%); /* Safari 5.1-6.0 */
+	background: -o-radial-gradient(yellow 33%, green 66%, blue 100%); /* For Opera 11.6-12.0 */
+	background: -moz-radial-gradient(yellow 33%, green 66%, blue 100%); /* For Firefox 3.6-15 */
+	background: radial-gradient(yellow 33%, green 66%, blue 100%); /* Standard syntax */
+}
+
+.text-shadow {
+	text-shadow: 2px 2px #666;
+}
+
+.text-shadow2 {
+	text-shadow: 0px 0px 5px #f00; 
+}
+
+.text-shadow3 {
+	text-shadow: 0px -5px 5px #f00, 0px 5px 10px yellow; 
+}
+
+.box-shadow {
+	width: 200px;
+	height: 200px;
+	background: white;
+	box-shadow: 0px 0px 10px #111;
+}
+
+.text1 {
+	width: 100px;
+	border: 1px solid #ccc;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.text2 {
+	width: 100px;
+	border: 1px solid #ccc;
+	word-break: break-all;
+}
+
+.transform2 {
+	width: 100px;
+	height: 100px;
+	background: yellow;
+	-ms-transform: translate(50px,100px); /* IE 9 */
+	-webkit-transform: translate(50px,100px); /* Safari */
+	transform: translate(50px,100px);
+	float: left;
+	margin-left: 30px;
+}
+
+.transform1 {
+	width: 100px;
+	height: 100px;
+	background: green;
+	-ms-transform: scale(0.5,0.5); /* IE 9 */
+    -webkit-transform: scale(0.5,0.5); /* Safari */
+    transform: scale(0.5,0.5);
+    float: left;
+    margin-left: 30px;
+}
+
+.transform3 {
+	width: 100px;
+	height: 100px;
+	background: blue;
+	-ms-transform: skewX(20deg); /* IE 9 */
+    -webkit-transform: skewX(20deg); /* Safari */
+    transform: skewX(20deg);
+    float: left;
+    margin-left: 30px;
+}
+
+.transform4 {
+	width: 100px;
+	height: 100px;
+	background: orange;
+	-ms-transform: skewY(20deg); /* IE 9 */
+    -webkit-transform: skewY(20deg); /* Safari */
+    transform: skewY(20deg);
+    float: left;
+    margin-left: 30px;
+}
+
+.transform5 {
+	width: 100px;
+	height: 100px;
+	-ms-transform: matrix(1, 0, 0.5, 1, 150, 0); /* IE 9 */
+    -webkit-transform: matrix(1, 0, 0.5, 1, 150, 0); /* Safari */
+    transform: matrix(1, 0, 0.5, 1, 150, 0); /* Standard syntax */
+    background: cyan;
+    margin-top: 100px;
+    float: left;
+}
+
+
+.transform6 {
+	width: 100px;
+	height: 100px;
+	-ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    background: red;
+    float: left;
+}
+
+.transform3d {
+	width: 200px;
+	height: 200px;
+	border: 1px solid #ccc;
+	font-size: 25px;
+	-webkit-transform: rotateX(150deg);
+    transform: rotateX(150deg);
+}
+
+.transform3d1 {
+	width: 200px;
+	height: 200px;
+	border: 1px solid #ccc;
+	font-size: 25px;
+	-webkit-transform: scale3d(0.5, 0.5, 0.5);
+    transform: scale3d(0.5, 0.5, 0.5);
+}
+
+.transform3d2 {
+	width: 200px;
+	height: 200px;
+	border: 1px solid #ccc;
+	font-size: 25px;
+	-webkit-transform: translateX(100px);
+    transform: translateX(100px);
+}
+
+.transition1 {
+	width: 100px;
+    height: 100px;
+    background: red;
+    -webkit-transition: margin-left 2s; /* Safari */
+    transition: margin-left 2s;
+    /*-webkit-transition-delay: 1s; /* Safari */*/
+    /*transition-delay: 1s;*/
+}
+
+.transition1:hover {
+	margin-left: 200px;
+}
+
+.transition2 {
+	width: 100px;
+    height: 100px;
+    background: green;
+    -webkit-transition: width 2s, height 2s; /* Safari */
+    transition: width 2s, height 2s;
+    /*-webkit-transition-delay: 1s; /* Safari */*/
+    /*transition-delay: 1s;*/
+}
+
+.transition2:hover {
+	width: 300px;
+	height: 300px;
+}
+
+.transition3 {
+	width: 100px;
+    height: 100px;
+    background: blue;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.transition3:hover {
+    width: 300px;
+    height: 300px;
+	-webkit-transform: rotate(180deg); /* Safari */
+    transform: rotate(180deg);
+}
+
+@keyframes example {
+    from {background-color: green;}
+    to {background-color: blue;}
+}
+
+.animation1 {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+@keyframes example2 {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
+
+.animation2 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example2;
+    animation-duration: 4s;
+}
+
+@keyframes example3 {
+    0%   {background-color: red; left:0px; top:0px;}
+    25%  {background-color: yellow; left:200px; top:0px;}
+    50%  {background-color: blue; left:200px; top:200px;}
+    75%  {background-color: green; left:0px; top:200px;}
+    100% {background-color: red; left:0px; top:0px;}
+}
+
+.animation3 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    animation-name: example3;
+    animation-duration: 4s;
+}
+
+@keyframes example4 {
+    0%   {background-color:yellow; left:0px; top:0px;}
+    25%  {background-color:green; left:200px; top:0px;}
+    50%  {background-color:red; left:200px; top:200px;}
+    75%  {background-color:orange; left:0px; top:200px;}
+    100% {background-color:blue; left:0px; top:0px;}
+}
+
+.animation4 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    -webkit-animation-name: example;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: 3;
+    animation-name: example4;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+}
+
+.column-span {
+    -webkit-column-span: 1;
+    column-span: 1;
+}
+
+.multiple-columns {
+	-webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 40px;
+    -moz-column-gap: 40px;
+    column-gap: 40px;
+
+    -webkit-column-rule: 1px solid #ccc;
+    -moz-column-rule: 1px solid #ccc;
+    column-rule: 1px solid #ccc;
+}
