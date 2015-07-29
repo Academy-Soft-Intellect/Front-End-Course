@@ -1,0 +1,83 @@
+.widths(@n, @i: 1, @name: @i * 10) when (@i =< @n) {
+	.width-@{name} {
+    	width: (@i);
+  	}
+  	.widths(@n, (@i + 1));
+}
+
+.w(@n, @i: 1, @name: @i * 100) when (@i =< @n) {
+	.w@{name}px {
+    	width: ~"@{name}px";
+  	}
+  	.w(@n, (@i + 1));
+}
+
+.h(@n, @i: 1, @name: @i * 100) when (@i =< @n) {
+	.h@{name} {
+    	height: ~"@{name}px";
+  	}
+  	.h(@n, (@i + 1));
+}
+
+.margin-top(@n, @i: 0) when (@i =< @n) {
+	.mt-@{i} {
+		margin-top: ~"@{i}px";
+	}
+	.margin-top(@n, (@i + 5));
+}
+
+.margin-bottom(@n, @i: 0) when (@i =< @n) {
+	.mb-@{i} {
+		margin-bottom: ~"@{i}px";
+	}
+	.margin-bottom(@n, (@i + 5));
+}
+
+.margin-right(@n, @i: 0) when (@i =< @n) {
+	.mr-@{i} {
+		margin-right: ~"@{i}px";
+	}
+	.margin-right(@n, (@i + 5));
+}
+
+.margin-left(@n, @i: 0) when (@i =< @n) {
+	.ml-@{i} {
+		margin-left: ~"@{i}px";
+	}
+	.margin-left(@n, (@i + 5));
+}
+
+.padding-left(@n, @i: 0) when (@i =< @n) {
+	.pl-@{i} {
+		padding-left: ~"@{i}px";
+	}
+	.padding-left(@n, (@i + 5));
+}
+
+.padding-right(@n, @i: 0) when (@i =< @n) {
+	.pr-@{i} {
+		padding-right: ~"@{i}px";
+	}
+	.padding-right(@n, (@i + 5));
+}
+
+.padding-bottom(@n, @i: 0) when (@i =< @n) {
+	.pb-@{i} {
+		padding-bottom: ~"@{i}px";
+	}
+	.padding-bottom(@n, (@i + 5));
+}
+
+.padding-top(@n, @i: 0) when (@i =< @n) {
+	.pt-@{i} {
+		padding-top: ~"@{i}px";
+	}
+	.padding-top(@n, (@i + 5));
+}
+
+.fs(@n, @i: 10) when (@i =< @n) {
+	.fs-@{i} {
+		font-size: ~"@{i}px";
+	}
+	.fs(@n, (@i + 1));
+}
