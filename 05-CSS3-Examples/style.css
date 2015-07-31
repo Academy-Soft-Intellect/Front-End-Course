@@ -1,9 +1,9 @@
 .border-img {
 	width: 200px;
 	height: 200px;
-	-webkit-border-image: url('Dot.png') 1 stretch; /* Safari 3.1-5 */
-    -o-border-image: url('Dot.png') 1 stretch; /* Opera 11-12.1 */
-    border-image: url('Dot.png') 1 stretch;
+	-webkit-border-image: url('Dot.png') 20% repeat; /* Safari 3.1-5 */
+    -o-border-image: url('Dot.png') 20% repeat; /* Opera 11-12.1 */
+    border-image: url('Dot.png') 20% repeat;
 }
 
 .border-img2 {
@@ -17,28 +17,30 @@
 .rounded-corners {
 	width: 200px;
 	height: 200px;
-	border-radius: 20px;
+	border-radius: 30px;
 	background: green;
+	border: 5px solid yellow;
 }
 
 .rounded-corners2 {
 	background: 200px;
 	height: 200px;
 	background: orange;
-	border-radius: 15px 50px 30px;
+	border-radius: 15px 20px 50px 30px;
 }
 
 .multiple-background {
 	width: 1000px;
 	height: 1000px;
 	background: url('img.jpg') no-repeat top left, url('img2.jpg') no-repeat bottom right;
+	background: red;
 }
 
 .background-size {
-	width: 1000px;
-	height: 1000px;
-	background: url('img.jpg') no-repeat top left;
-	background-size: 320px 180px;
+	width: 200px;
+	height: 100px;
+	background: url('img.jpg') no-repeat top right;
+	background-size: 32px 18px;
 }
 
 .rgba {
@@ -91,7 +93,8 @@
 }
 
 .text-shadow {
-	text-shadow: 2px 2px #666;
+	color: yellow;
+	text-shadow: 2px 2px #000;
 }
 
 .text-shadow2 {
@@ -99,20 +102,21 @@
 }
 
 .text-shadow3 {
-	text-shadow: 0px -5px 5px #f00, 0px 5px 10px yellow; 
+	text-shadow: 0px -5px 5px #f00, 0px 5px 10px yellow;
 }
 
 .box-shadow {
 	width: 200px;
 	height: 200px;
 	background: white;
-	box-shadow: 0px 0px 10px #111;
+	box-shadow: 0 0 10px #111;
 }
 
 .text1 {
 	width: 100px;
+	margin-bottom: 20px;
 	border: 1px solid #ccc;
-	white-space: nowrap;
+	white-space: normal;
 	text-overflow: ellipsis;
 	overflow: hidden;
 }
@@ -127,11 +131,11 @@
 	width: 100px;
 	height: 100px;
 	background: yellow;
-	-ms-transform: translate(50px,100px); /* IE 9 */
-	-webkit-transform: translate(50px,100px); /* Safari */
-	transform: translate(50px,100px);
+	-ms-transform: translate(100px,100px); /* IE 9 */
+	-webkit-transform: translate(100px,100px); /* Safari */
+	transform: translate(100px,100px);
 	float: left;
-	margin-left: 30px;
+	/*margin-left: 30px;*/
 }
 
 .transform1 {
@@ -149,9 +153,9 @@
 	width: 100px;
 	height: 100px;
 	background: blue;
-	-ms-transform: skewX(20deg); /* IE 9 */
-    -webkit-transform: skewX(20deg); /* Safari */
-    transform: skewX(20deg);
+	-ms-transform: skew(20deg); /* IE 9 */
+    -webkit-transform: skew(20deg); /* Safari */
+    transform: skew(20deg);
     float: left;
     margin-left: 30px;
 }
@@ -170,9 +174,9 @@
 .transform5 {
 	width: 100px;
 	height: 100px;
-	-ms-transform: matrix(1, 0, 0.5, 1, 150, 0); /* IE 9 */
-    -webkit-transform: matrix(1, 0, 0.5, 1, 150, 0); /* Safari */
-    transform: matrix(1, 0, 0.5, 1, 150, 0); /* Standard syntax */
+	-ms-transform: matrix(0.5, 0.5, 0.5, 1, 150, 0); /* IE 9 */
+    -webkit-transform: matrix(0.5, 0.5, 0.5, 1, 150, 0); /* Safari */
+    transform: matrix(0.5, 0.5, 0.5, 1, 150, 0); /* Standard syntax */
     background: cyan;
     margin-top: 100px;
     float: left;
@@ -182,9 +186,9 @@
 .transform6 {
 	width: 100px;
 	height: 100px;
-	-ms-transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
+	-ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
     background: red;
     float: left;
 }
@@ -194,8 +198,8 @@
 	height: 200px;
 	border: 1px solid #ccc;
 	font-size: 25px;
-	-webkit-transform: rotateX(150deg);
-    transform: rotateX(150deg);
+	-webkit-transform: rotate;
+    transform: rotate;
 }
 
 .transform3d1 {
@@ -335,11 +339,11 @@
 	-webkit-column-count: 3;
     -moz-column-count: 3;
     column-count: 3;
-    -webkit-column-gap: 40px;
-    -moz-column-gap: 40px;
-    column-gap: 40px;
+    -webkit-column-gap: 100px;
+    -moz-column-gap: 100px;
+    column-gap: 100px;
 
-    -webkit-column-rule: 1px solid #ccc;
-    -moz-column-rule: 1px solid #ccc;
-    column-rule: 1px solid #ccc;
+    -webkit-column-rule: 5px solid #f00;
+    -moz-column-rule: 5px solid #f00;
+    column-rule: 5px solid #f00;
 }
