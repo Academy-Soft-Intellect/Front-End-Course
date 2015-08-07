@@ -157,6 +157,9 @@
   height: 200px;
   background: #0000ff;
 }
+.wrapper .container {
+  background: red;
+}
 .container.background-red {
   background: #ff0000;
   height: auto;
