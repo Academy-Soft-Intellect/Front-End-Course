@@ -528,7 +528,7 @@ ul#nav ul {
 
 ul#nav li a { 
   padding: 7px 25px 6px 25px;
-  font: 170% 'Yanone Kaffeesatz', arial, sans-serif;
+  font: 16px 'Yanone Kaffeesatz', arial, sans-serif;
   text-shadow: 1px 1px #000;
   text-decoration: none;
   color: #FFF;
@@ -566,4 +566,110 @@ ul#images li {
   float: left;
   width: 155px;
   height: 300px;
+}
+
+.show img {
+  max-width: 100%;
+  height: auto;
+}
+
+#hamburger {
+  width: 60px;
+  height: 50px;
+  background: #fff;
+  position: absolute;
+  top: 15%;
+  left: 1%;
+  display: none;
+}
+@media (min-width: 651px) and (max-width: 768px) {
+  #main {
+    width: 98%;
+  }
+
+  nav,
+  #site_content,
+  footer,
+  #logo {
+    width: 100%;
+  }
+
+  ul#nav li a {
+    padding: 7px 15px;
+  }
+
+  #sidebar_container {
+    width: 100%;
+  }
+
+  .sidebar {
+    width: 40%;
+    padding: 0 5%;
+    float: left;
+  }
+
+  #logo_text {
+    padding-left: 2%;
+  }
+
+  ul#nav li a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 650px) {
+  #main {
+    width: 98%;
+  }
+
+  nav,
+  #site_content,
+  footer,
+  #logo {
+    width: 100%;
+  }
+
+  nav {
+    height: auto;
+  }
+
+  ul.sf-menu li {
+    float: none;
+    text-align: center;
+  }
+  ul#nav {
+    float: none;
+  }
+
+  .sidebar h3, .content h1 {
+    font-size: 25px;
+  }
+
+  .sidebar {
+    float: none;
+  }
+
+  #sidebar_container {
+    float: none;
+    width: 100%;
+  }
+
+  .content {}
+}
+
+@media (max-width: 460px) {
+  nav,
+  #site_content,
+  footer,
+  #logo {
+    width: 100%;
+  }
+
+  nav {
+    display: none;
+  }
+
+  #hamburger {
+    display: block;
+  }
 }
