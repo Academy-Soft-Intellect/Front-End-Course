@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	
+	<script>
+	$(document).ready(function() {
+		$('img').hover(function() {
+			if($(this).hasClass('img1')) {
+				$(this).attr('data-src', $(this).attr('src'));
+				$(this).attr('src', $('.img2').attr('src'));
+			} else {
+				$(this).attr('data-src', $(this).attr('src'));
+				$(this).attr('src', $('.img1').attr('src'));
+			}
+		},
+		function() {
+			$(this).attr('src', $(this).attr('data-src'));
+		});
+	});
+	</script>
+</head>
+<body>
+	
+	<img class="img1" src="img1.png" data-src="img1.png" alt="Img1">
+	<img class="img2" src="img2.png" data-src="" alt="Img1">
+</body>
+</html>
