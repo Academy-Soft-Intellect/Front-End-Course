@@ -1,4 +1,20 @@
+.hover-el {
+	background-color: red;
+	color: white;
+}
+.hover-el div {
+	width: 20px;
+	margin: 10px auto;
+}
+.hover-el:hover {
+	background-color: white;
+}
+.hover-el p:ls-child {
+	background-color: green;
+}
 .someLink {
+	top:10px;
+	left:10px;
 	color: red;
 }
 
@@ -94,6 +110,7 @@ table td {
 	border-style: solid;
 	border-style: double;
 	border-style: ridge;
+
 	border-style: groove;
 	border-width: 10px;
 	border-color: yellow;
