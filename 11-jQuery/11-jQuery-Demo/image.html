@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>image demo</title>
+		<script src="bower_components/jquery/dist/jquery.js"></script>
+		<style>
+			#girl-image {
+				display: inline-block;
+				padding: 2px;
+				width: 500px;
+				border: 1px solid #333;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1>Wink Demo</h1>
+
+		<center>
+			<img id="girl-image" src="img/hayley-smile.gif" />
+		</center>
+
+		<a href="form.html"> Previous demo </a>
+		<br />
+		<a href="index.html"> Home </a>
+		<br />
+		<a href="alert.html"> Next demo </a>
+		<script>
+			$(document).ready(function(){
+				$("#girl-image").hover(function(){
+					$(this).attr("src", "img/hayley-wink.jpg");
+					//the same as
+					//$("#girl-image").attr("src", "img/hayley-wink.jpg");
+					$(this).css({
+						borderColor: "#FDF9D6"
+					});
+				}, function() {
+					$(this).attr("src", "img/hayley-smile.gif");
+					$(this).css({
+						borderColor: "#333"
+					});
+				});
+			});
+		</script>
+	</body>
+</html>

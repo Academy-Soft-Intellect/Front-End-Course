@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<script src="bower_components/jquery/dist/jquery.js"></script>
+		<style>
+			.menu li {
+				margin: 2px;
+			}
+			.menu a {
+				color: grey;
+				padding: 5px;
+				border: 1px solid black;
+				display: block;
+			}
+			.menu a:hover {
+				border: 1px dashed red;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1>jQuery tutorial</h1>
+		<ul class="menu">
+			<li><a href="index.html">home</a></li>
+			<li><a href="image.html">image</a></li>
+			<li><a href="alert.html">alert</a></li>
+			<li><a href="form.html">form</a></li>
+		</ul>
+
+		<script>
+			$(document).ready(function() {
+				$('.menu').children().filter(':odd').css({
+					backgroundColor: '#333'
+				})
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<script src="bower_components/jquery/dist/jquery.js"></script>
+		<style>
+			#greeting {
+				margin: 20px 0;
+				padding: 20px;
+				border: 1px solid black;
+			}
+			select,
+			input {
+				width: 150px;
+			}
+			label {
+				text-transform: capitalize;
+				display: inline-block;
+				width: 100px;
+			}
+			label:after {
+				content: ": "
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<h1>Form demo</h1>
+
+		<div>
+			<label>gender</label>
+			<select id="gender">
+				<option value=""></option>
+				<option value="Mrs">female</option>
+				<option value="Mr">male</option>
+				<option value="Master">alien</option>
+				<option value="??">other</option>
+			</select>
+		</div>
+
+		<div>
+			<label>name</label>
+			<input id="name" type="text" />
+		</div>
+
+		<div id="greeting">
+			Hello <span id="greeting-gender"></span> <span id="greeting-name"></span>
+		</div>
+
+		<a href="alert.html"> Previous demo </a>
+		<br />
+		<a href="index.html"> Home </a>
+		<br />
+		<a href="image.html"> Next demo </a>
+
+		<script>
+			$(document).ready(function(){
+				$('#gender').change(function(){
+					var value = $(this).val()
+					console.log("You have chosen " + value);
+					$("#greeting-gender").text(value);
+				});
+				$("#name").on('change keypress', function(){
+					$("#greeting-name").text($(this).val());
+				});
+			});
+		</script>
+	</body>
+</html>

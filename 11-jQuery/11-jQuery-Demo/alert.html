@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>image demo</title>
+		<script src="bower_components/jquery/dist/jquery.js"></script>
+		<style>
+			#alertbox {
+				/* position and size */
+				position: absolute;
+				bottom: 20px;
+				left: 50%;
+				width: 240px;
+				margin-left: -120px;
+
+				/* make it pretty */
+				border: 1px solid #393733;
+				border-radius: 5px;
+				color: #393733;
+				padding: 20px;
+				font-family: Verdana, Arial, Helvetica, sans-serif;
+				text-align: center;
+				text-transform: uppercase;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1>Alert Demo</h1>
+
+		<center>
+			<button id="clickme"> Hello World </button>
+		</center>
+
+		<div id="alertbox">
+			<img src="img/kitten-bg.png"  />
+			<p>Meow Meow Meow</p>
+		</div>
+
+
+		<a href="image.html"> Previous demo </a>
+		<br />
+		<a href="index.html"> Home </a>
+		<br />
+
+		<a href="form.html"> Next demo </a>
+		<script>
+			$(document).ready(function(){
+
+				$("#alertbox").hide();
+				$("#clickme").on("click", function(){
+					$("#alertbox").fadeIn("slow").delay(2000).fadeOut("slow");
+				});
+			});
+		</script>
+	</body>
+</html>

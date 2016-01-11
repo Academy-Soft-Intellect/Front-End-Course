@@ -1,0 +1,7 @@
+
+$( "<button type='button'></button>" )
+	.text( "Stop All Animations" )
+	.on( "click", function() {
+		$( "body *" ).filter( ":animated" ).stop();
+	})
+	.appendTo( document.body );
