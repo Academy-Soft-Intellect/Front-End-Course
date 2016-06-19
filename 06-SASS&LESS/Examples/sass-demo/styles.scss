@@ -1,0 +1,45 @@
+@import "includes/variables.scss";
+@import "includes/mixins.scss";
+
+header{
+	border: 1px solid $second-color;
+	h1{
+		@include large-text;
+		color: $second-color;
+	}
+	h2{
+		@include large-text;
+		color: $second-color;
+	}
+}
+
+main{
+	width: 800px;
+	margin: 0 auto;
+	background: blue;
+}
+
+section{
+	button{
+		background-color: $second-color;
+	}
+	.box{
+		width: $box-width;
+		height: $box-height;
+		background-color: $second-color;
+		@include border(null, 5px);
+	}
+	.circle{
+		@extend .box;
+		display: inline-block;
+		@include border(green, 10px);
+		@include border-radius(100%);
+	}
+}
+
+.#{$link-class} {
+	color: $second-color;
+	&:hover{
+		color: purple;
+	}
+}

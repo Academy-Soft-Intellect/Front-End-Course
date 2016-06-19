@@ -1,0 +1,14 @@
+@main-color: red;
+
+.border(@color, @width){
+	border: @width solid @color;
+}
+
+body{
+	background: @main-color;
+}
+
+div{
+	.border(blue, 6px);
+}
+

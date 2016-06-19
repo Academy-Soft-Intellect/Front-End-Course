@@ -1,0 +1,12 @@
+@mixin large-text {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+@mixin border($color: red, $width: 5px){
+	border: $width solid $color;
+}
+
+@mixin border-radius($width){
+	border-radius: $width;
+}
