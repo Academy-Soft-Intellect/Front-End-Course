@@ -13,7 +13,8 @@ function getSpecialOffer () {
 } 
 
 function setDressImage(imageName){
-	document.getElementById('special-offer').style.backgroundImage = 'url("img/' + imageName + '.jpg")';
+	document.getElementById('special-offer')
+	.style.backgroundImage = 'url("img/' + imageName + '.jpg")';
 }
 
 //Exercise: make a switch case with week days

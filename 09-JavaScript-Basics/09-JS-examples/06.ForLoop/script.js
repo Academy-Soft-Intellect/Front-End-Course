@@ -4,11 +4,11 @@ function printNumbers () {
 	// get to number
 	var toNumber = document.getElementById('to-number').value;
 
-	var div = document.createElement('div');
 	var holder = document.getElementById('numbers-holder');
 
-	for(var i = startNumber; i < toNumber; i++){
+	for(var i = startNumber; i <= toNumber; i++){
 		var node = document.createTextNode(i + " -- ");
 		holder.appendChild(node);
 	}
+
 }

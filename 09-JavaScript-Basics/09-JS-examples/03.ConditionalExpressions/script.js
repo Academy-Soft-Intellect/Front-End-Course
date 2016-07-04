@@ -4,7 +4,6 @@ function getSpecialOffer () {
 	console.log(gender)
 
 	if(gender === "Male"){
-		console.log(document.getElementById('special-offer'));
 		document.getElementById('special-offer').style.backgroundImage = 'url("img/suit.jpg")';
 	} else{
 		document.getElementById('special-offer').style.backgroundImage = 'url("img/dress.jpg")';

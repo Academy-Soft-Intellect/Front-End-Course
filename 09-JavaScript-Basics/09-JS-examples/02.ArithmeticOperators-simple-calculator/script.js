@@ -1,5 +1,3 @@
-var shoppingCartSum = 0;
-
 function calculate () {
 	// get the value of first input 
 	var firstNum = document.getElementById('first-number').value;
@@ -13,5 +11,5 @@ function calculate () {
 	var resultInput = document.getElementById('result');
 
 	var result = firstNum + secondNum;
-	resultInput.value = result; 
+	resultInput.value = result;
 } 
