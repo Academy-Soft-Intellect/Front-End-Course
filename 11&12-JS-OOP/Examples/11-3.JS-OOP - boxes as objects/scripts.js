@@ -3,6 +3,18 @@ var Box = function(width, height, background, color){
 	this.height = height;
 	this.background = background;
 	this.color = color;
+	/*this.generate = function(){
+		// create the div
+		var body = document.getElementsByTagName('body')[0];
+		var div = document.createElement('div');
+		//style the div
+		div.style.width = this.width + 'px';
+		div.style.height = this.height + 'px';
+		div.style.backgroundColor = this.background;
+		div.style.color = this.color;
+
+		body.appendChild(div);
+	}*/
 } 
 
 Box.prototype.generate = function(){
