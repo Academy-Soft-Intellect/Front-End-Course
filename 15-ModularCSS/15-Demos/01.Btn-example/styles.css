@@ -1,0 +1,20 @@
+.btn{
+	font-size: 15px;
+	border: none;
+	border-radius: 8px;
+	color: black;
+	padding: 8px 16px;
+	outline: none;
+}
+.btn-default{
+	background: gray;
+}
+.btn-success{
+	background: green;
+}
+.btn-danger{
+	background: red;
+}
+.btn-warning{
+	background: yellow;
+}
