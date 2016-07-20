@@ -1,0 +1,49 @@
+.btn{
+	color: #000;
+	border: none;
+	border-radius: 5px;
+	outline: none;
+	padding: 5px 15px;
+}
+
+.btn-default{
+	background: grey;
+}
+
+.btn-success{
+	background: green;
+}
+
+.btn-danger{
+	background: red;
+	color: #fff;
+}
+
+.btn-warning{
+	background: yellow;
+}
+
+.btn-small{
+	padding: 2px 5px;
+}
+
+.btn-large{
+	padding: 8px 20px;
+}
+
+
+/*.textbox{
+
+}
+.textbox-small{
+	width: 200px;
+}
+.textbox-large{
+	width: 500px;
+}*/
+
+#box{
+	background: red;
+	width: 200px;
+	height: 200px;
+}
