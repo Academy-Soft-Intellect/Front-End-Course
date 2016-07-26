@@ -1,0 +1,226 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END of reset */
+*{
+	box-sizing: border-box;
+}
+$main-color: #2ecc71;
+$secondary-color: #e3e3e3;
+$white: #fff;
+body{
+	color: #848484;
+	font-size: 16px;
+	line-height: 26px;
+	font-family: Helvetica, sans-serif;
+}
+h2{
+	font-size: 22px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	color: #222222;
+	font-weight: 600;
+}
+.green{
+	color: $main-color;
+}
+.container{
+	max-width: 1180px;
+	margin: 0 auto;
+}
+.clearfix:after{
+	content: "";
+	clear: both;
+	display: block;
+	overflow: hidden;
+}
+header{
+	border-top: 10px solid $main-color;
+	height: 600px;
+	background-image: url('img/notify.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+
+	.text-overlay{
+		max-width: 470px;
+		position: relative;
+		font-size: 24px;
+		line-height: 36px;
+		h1{
+			font-family: 'Pacifico', cursive;
+			font-size: 60px;
+			line-height: 60px;
+			margin-bottom: 70px;
+		}
+		position: absolute;
+		top: 160px;
+		left: 325px;
+		color: $white;
+		.header-links{
+			margin-top: 25px;
+			a{
+				display: inline-block;
+				width: 54px;
+				height: 54px;
+				border-radius: 100%;
+				background-repeat: no-repeat;
+				background-color: rgba(129, 129, 129, 0.8);
+				background-position: 50%;
+				margin-right: 15px;
+				&:hover{
+					background-color: $main-color; 
+				}
+				&.apple{
+					background-image: url('img/icon-apple.png');
+				}
+				&.android{
+					background-image: url('img/icon-android.png');
+				}
+				&.window{
+					background-image: url('img/icon-window.png');
+				}
+			}
+			
+		}
+	}
+
+}
+.features{
+	background-color: $white;
+	padding-top: 65px;
+	padding-bottom: 65px;
+	.feature{
+		float: left;
+		width: 25%;
+		margin-right: 100px;
+		text-align: center;
+		&:last-child{
+			margin-right: 0;
+		}
+		.icon{
+			width: 100px;
+			height: 100px;
+			background-color: $main-color;
+			border-radius: 100%;
+			display: inline-block;
+			background-repeat: no-repeat;
+			background-position: 50%;
+			&.icon-settings{
+				background-image: url('img/icon-settings.png');
+			}
+			&.icon-star{
+				background-image: url('img/icon-star.png');
+			}
+			&.icon-audience{
+				background-image: url('img/icon-audience.png');
+			}
+		}
+	}
+}
+.subscribe{
+	background-color: $secondary-color;
+	
+	.container{
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+	
+	.subscribe-form{
+		float: left;
+		width: 40%;
+		form{
+			margin-top: 30px;
+			input{
+				height: 55px;
+				outline: none;
+				border: 1px solid #c8c8c8;
+				padding: 20px 25px;
+				font-size: 22px;
+				line-height: 8px;
+				&.email{
+					border-radius: 5px 0 0 5px;
+					width: 65%;
+				}
+				&.submit{
+					border-radius: 0 5px 5px 0;
+					margin-left: -5px;
+					background-color: $main-color;
+					color: $white;
+					width: 35%;
+				}
+				
+			}
+		}
+	}
+	.subscribe-video{
+		float: right;
+		width: 40%;
+		iframe{
+			max-width: 100%;
+		}
+	}
+}
+.contacts{
+	background-color: $white;
+	padding: 60px 0;
+	text-align: center;
+	.images-holder{
+		.profile{
+			width: 50px;
+			height: 50px;
+			background-image: url('img/profile-pic.jpg');
+			float: left;
+			margin-right: 5px;
+		}
+	}
+}
+.bold{
+	font-weight: bold;
+	color: #2e2e2e;
+}
+@media screen and (min-width: 320px){
+	.container{
+		max-width: 800px;
+	}
+}

@@ -1,0 +1,17 @@
+[
+	{
+		"name": "Editable Theme",
+		"icon": "icon-settings",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen"
+	},
+	{
+		"name": "Flat Design",
+		"icon": "icon-star",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen"
+	},
+	{
+		"name": "Reach Your Audience",
+		"icon": "icon-audience",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen"
+	}
+]
